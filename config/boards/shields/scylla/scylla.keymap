@@ -33,12 +33,12 @@
 
     NAV {
 			bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp F3   &bootloader   &bt BT_CLR       &bootloader &kp F7    &kp F8      &kp F9   &kp F10  &kp F12
+&trans       &trans &trans &kp F3   &trans   &trans       &bootloader &kp F7    &bt BT_SEL_0      &bt BT_SEL_1   &bt BT_SEL_2  &bt BT_CLR
 &trans       &kp EXCL     &kp AT       &kp HASH &kp DLLR      &kp PRCNT        &kp CARET   &kp AMPS  &kp STAR    &kp LPAR &kp RPAR &trans
 &trans       &kp EQUAL    &kp DLLR     &kp LPAR &kp RPAR      &kp TILDE        &kp MINUS   &kp EQUAL  &kp LBKT    &kp RBKT &kp BSLH  &kp GRAVE
-&trans       &trans       &kp PRCNT    &kp LBKT &kp RBKT      &kp PIPE         &kp UNDER   &kp PLUS  &kp LBRC    &kp RBRC &kp PIPE  &kp TILDE
+&trans       &to 1       &kp PRCNT    &kp LBKT &kp RBKT      &kp PIPE         &kp UNDER   &kp PLUS  &kp LBRC    &kp RBRC &kp PIPE  &kp TILDE
                                             &trans   &trans   &trans           &kp LEFT    &kp UP  &kp RIGHT
-                                                     &trans   &kp ESC		   &kp ESC     &kp DOWN
+                                                     &bootloader   &kp ESC		   &kp ESC     &kp DOWN
 			>;
     };
 	};
