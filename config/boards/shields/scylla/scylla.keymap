@@ -16,7 +16,7 @@
 &kp TAB        &kp Q  &kp W  &kp E   &kp R     &kp T          &kp Y         &kp U          &kp I     &kp O   &kp P     &kp BKSP
 &mt LCTRL ESC  &kp A  &kp S  &kp D   &kp F     &kp G          &kp H         &kp J          &kp K     &kp L   &kp SEMI  &kp SQT
 &kp LSHIFT     &kp Z  &kp X  &kp C   &kp V     &kp B          &kp N         &kp M          &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
-                            &mo SYM &kp SPACE &kp LGUI       &mt RGUI BSPC &lt NAV ENTER &mo SYM
+                            &kp LGUI &mo SYM &kp SPACE       &kp ENTER &mo NAV &kp RALT
                                &kp LGUI  &lt NAV ENTER       &kp RALT      &kp PSCRN
 			>;
 		};
@@ -33,10 +33,10 @@
 
     NAV {
 			bindings = <
-&trans   &trans     &kp F3     &trans   &trans    &bootloader      &kp F6      &trans        &bt BT_SEL_0 &bt BT_SEL_1 &bt BT_SEL_2  &bt BT_CLR
+&trans   &trans     &kp F3     &trans   &trans    &bootloader      &kp F6      &trans        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_CLR
 &trans   &kp EXCL   &kp AT     &kp HASH &kp DLLR  &kp PRCNT        &kp CARET   &kp AMPS          &kp STAR    &kp LPAR   &kp RPAR      &trans
 &trans   &kp EQUAL  &kp DLLR   &kp LPAR &kp RPAR  &kp TILDE        &kp MINUS   &kp EQUAL         &kp LBKT    &kp RBKT   &kp BSLH      &kp GRAVE
-&trans   &trans      &kp PRCNT  &kp LBKT &kp RBKT  &kp PIPE         &kp UNDER   &kp PLUS          &kp LBRC    &kp RBRC   &kp PIPE      &kp TILDE
+&trans   &to 1      &kp PRCNT  &kp LBKT &kp RBKT  &kp PIPE         &kp UNDER   &kp PLUS          &kp LBRC    &kp RBRC   &kp PIPE      &kp TILDE
                                     &trans   &trans   &trans       &kp LEFT    &kp UP  &kp RIGHT
                                         &bootloader   &kp ESC	   &kp ESC     &kp DOWN
 			>;
