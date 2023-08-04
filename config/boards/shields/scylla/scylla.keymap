@@ -17,7 +17,7 @@
 &mt LCTRL ESC  &kp A  &kp S  &kp D   &kp F     &kp G          &kp H         &kp J          &kp K     &kp L   &kp SEMI  &kp SQT
 &kp LSHIFT     &kp Z  &kp X  &kp C   &kp V     &kp B          &kp N         &kp M          &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
                             &mo SYM &kp SPACE &kp LGUI        &kp RALT &kp ENTER &mo NAV
-                               &kp LGUI  &lt NAV ENTER        &kp RALT      &kp PSCRN
+                               &kp LGUI  &lt NAV ENTER        &lt SYM SPACE &kp LGUI
 			>;
 		};
     SYM {
