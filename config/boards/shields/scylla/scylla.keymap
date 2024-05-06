@@ -40,7 +40,7 @@
 &trans   &kp EQUAL  &kp DLLR   &kp LPAR &kp RPAR  &kp TILDE        &kp MINUS   &kp EQUAL         &kp LBKT    &kp RBKT   &kp BSLH      &kp GRAVE
 &trans   &trans    &kp PRCNT  &kp LBKT &kp RBKT  &kp PIPE          &kp UNDER   &kp PLUS          &kp LBRC    &kp RBRC   &kp PIPE      &kp TILDE
 
-                       &bt trans   &bt BT_CLR_ALL    &trans       &kp LEFT    &kp UP  &kp RIGHT
+                       &trans   &bt BT_CLR_ALL    &trans       &kp LEFT    &kp UP  &kp RIGHT
                                         &bootloader   &kp ESC	   &kp ESC     &kp DOWN
 			>;
     };
