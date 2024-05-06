@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 
 
 
@@ -39,7 +38,7 @@
 &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &trans    &bootloader      &kp F6      &trans        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_CLR
 &trans   &kp EXCL   &kp AT     &kp HASH &kp DLLR  &kp PRCNT        &kp CARET   &kp AMPS          &kp STAR    &kp LPAR   &kp RPAR      &trans
 &trans   &kp EQUAL  &kp DLLR   &kp LPAR &kp RPAR  &kp TILDE        &kp MINUS   &kp EQUAL         &kp LBKT    &kp RBKT   &kp BSLH      &kp GRAVE
-&ext_power EP_TOG   &trans    &kp PRCNT  &kp LBKT &kp RBKT  &kp PIPE         &kp UNDER   &kp PLUS          &kp LBRC    &kp RBRC   &kp PIPE      &kp TILDE
+&trans   &trans    &kp PRCNT  &kp LBKT &kp RBKT  &kp PIPE         &kp UNDER   &kp PLUS          &kp LBRC    &kp RBRC   &kp PIPE      &kp TILDE
                                     &bt BT_CLR   &bt BT_CLR_ALL   &trans       &kp LEFT    &kp UP  &kp RIGHT
                                         &bootloader   &kp ESC	   &kp ESC     &kp DOWN
 			>;
