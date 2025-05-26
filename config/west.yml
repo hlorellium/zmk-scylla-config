@@ -4,10 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: infused-kim
       url-base: https://github.com/infused-kim
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: infused-kim
       revision: my-changes/split-encoder
       import: app/west.yml
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
+      revision: main
   self:
     path: config
