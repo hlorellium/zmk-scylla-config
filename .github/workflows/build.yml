@@ -33,7 +33,7 @@ jobs:
         id: variables
         run: |
           if [ -n "${{ matrix.shield }}" ]; then
-            EXTRA_CMAKE_ARGS="-DSHIELD=${{ matrix.shield }}"
+            EXTRA_CMAKE_ARGS="-DSHIELD=\"${{ matrix.shield }}\""
             ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
             DISPLAY_NAME="${{ matrix.shield }} - ${{ matrix.board }}"
           else
