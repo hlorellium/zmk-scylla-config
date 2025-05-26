@@ -1,6 +1,6 @@
 ---
 include:
- - board: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: "scylla_dongle prospector_adapter"
   - board: nrfmicro_13
     shield: scylla_left
