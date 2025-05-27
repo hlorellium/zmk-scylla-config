@@ -5,10 +5,11 @@
 if SHIELD_SCYLLA_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Scylla"
+    default "Scylla"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+    bool "Set BLE role to central for left half"
+    default y
 
 endif
 
@@ -33,14 +34,17 @@ config ZMK_KEYBOARD_NAME
     default "Scylla Dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
+    bool "Set BLE role to central for dongle"
     default y
 
 config ZMK_SPLIT
+    # This already has a type from ZMK's Kconfig, just providing default
     default y
 
 # Set this to the number of peripherals your dongle will have.
 # For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    int "Number of BLE peripherals for dongle"
     default 2
 
 # Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
