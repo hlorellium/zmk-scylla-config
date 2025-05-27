@@ -1,7 +1,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: scylla_dongle prospector_adapter 
+    shield: scylla_dongle prospector_adapter
+    cmake-args: "-DZMK_SPLIT_BLE_PERIPHERAL_COUNT=2"
   - board: nrfmicro_13
     shield: scylla_left
   - board: nrfmicro_13
