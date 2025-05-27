@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/carrefinho
   projects:
     - name: zmk
-      remote: infused-kim
-      revision: my-changes/split-encoder
+      remote: zmkfirmware
+      revision: main # Or a specific tag like '3.5' for stability
       import: app/west.yml
     - name: prospector-zmk-module
       remote: carrefinho

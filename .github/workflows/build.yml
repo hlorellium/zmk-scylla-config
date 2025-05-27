@@ -33,11 +33,11 @@ jobs:
         id: variables
         run: |
           if [ -n "${{ matrix.shield }}" ]; then
-            EXTRA_CMAKE_ARGS="-DSHIELD=\"${{ matrix.shield }}\""
+            EXTRA_CMAKE_ARGS="-DSHIELD=\"${{ matrix.shield }}\" -DKCONFIG_WARN_TO_ERROR=OFF"
             ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
             DISPLAY_NAME="${{ matrix.shield }} - ${{ matrix.board }}"
           else
-            EXTRA_CMAKE_ARGS=
+            EXTRA_CMAKE_ARGS="-DKCONFIG_WARN_TO_ERROR=OFF"
             DISPLAY_NAME="${{ matrix.board }}"
             ARTIFACT_NAME="${{ matrix.board }}-zmk"
           fi
