@@ -5,4 +5,4 @@
 };
 
 /* reuse the main Scylla keymap */
-#include "../scylla/scylla.keymap"
+#include "./scylla.keymap"
