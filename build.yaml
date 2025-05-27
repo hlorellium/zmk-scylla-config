@@ -1,7 +1,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: scylla_dongle prospector_adapter
+    shield: scylla prospector_adapter scylla_dongle
   - board: nrfmicro_13
     shield: scylla_left
   - board: nrfmicro_13
