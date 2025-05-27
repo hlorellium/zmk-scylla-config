@@ -47,6 +47,13 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     int "Number of BLE peripherals for dongle"
     default 2
 
+config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
+    int "Number of BLE peripherals (alias for Prospector widgets)"
+    default 2
+    help
+      Prospector adapter widgets expect this symbol.  Keep it equal to
+      ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS.
+
 # Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
 config BT_MAX_CONN
     default 6
