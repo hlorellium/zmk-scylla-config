@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SCYLLA_DONGLE
+
+# This is needed by the prospector_adapter shield's widgets
+config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
+    int "Number of BLE peripherals (for Prospector widgets)"
+    default 2
+    help
+      This value is used by some widgets in the prospector_adapter shield.
+      It should generally match the value of ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+      which is set in the main scylla shield's Kconfig.defconfig when
+      SHIELD_SCYLLA_DONGLE is active.
+
+# Ensure the main dongle Kconfig settings from the scylla shield are also included.
+# This relies on the scylla shield's Kconfig.defconfig being processed,
+# which happens if "scylla" is also in the shield list, or if these are duplicated.
+# For simplicity and to ensure scylla_dongle can be somewhat standalone for this
+# specific Kconfig need, we can re-assert critical dongle settings here if needed,
+# or ensure the build system correctly layers Kconfig from multiple shields if "scylla"
+# is not the primary shield.
+#
+# The primary settings like ZMK_SPLIT_ROLE_CENTRAL, ZMK_SPLIT,
+# ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS, BT_MAX_CONN, BT_MAX_PAIRED
+# are expected to be set by the main 'scylla' shield's Kconfig.defconfig
+# when SHIELD_SCYLLA_DONGLE is true. This file primarily serves to provide
+# ZMK_SPLIT_BLE_PERIPHERAL_COUNT when scylla_dongle is the first shield
+# in the list that provides a Kconfig.defconfig (or if prospector_adapter is first
+# and doesn't provide it).
+
+endif
