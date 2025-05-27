@@ -1,7 +1,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: prospector_adapter scylla scylla_dongle
+    shield: prospector_adapter scylla_dongle
     # cmake-args: "" # We might re-evaluate if cmake-args are needed later
   - board: nrfmicro_13
     shield: scylla_left
