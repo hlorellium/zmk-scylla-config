@@ -7,9 +7,9 @@ if SHIELD_SCYLLA_LEFT
 config ZMK_KEYBOARD_NAME
     default "Scylla"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    bool "Set BLE role to central for left half"
-    default y
+# config ZMK_SPLIT_BLE_ROLE_CENTRAL
+#     bool "Set BLE role to central for left half"
+#     default y
 
 endif
 
