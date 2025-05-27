@@ -8,5 +8,7 @@ include:
   - board: nrfmicro_13
     shield: scylla_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nrfmicro_13
+    shield: settings_reset
 
 
