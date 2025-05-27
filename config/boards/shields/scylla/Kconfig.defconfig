@@ -33,8 +33,12 @@ if SHIELD_SCYLLA_DONGLE
 config ZMK_KEYBOARD_NAME
     default "Scylla Dongle"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    bool "Set BLE role to central for dongle"
+# config ZMK_SPLIT_ROLE_CENTRAL
+#     bool "Set BLE role to central for dongle"
+#     default y
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    bool "Set BLE role to central for dongle (legacy)"
     default y
 
 config ZMK_SPLIT
